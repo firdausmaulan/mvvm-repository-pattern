@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mindorks MVVM</string>
+    <string name="search">Search</string>
+    <string name="network_error_message">Unable connect to server, please try again later.</string>
+</resources>
