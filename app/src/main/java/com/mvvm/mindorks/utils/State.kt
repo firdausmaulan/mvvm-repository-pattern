@@ -1,7 +1,5 @@
 package com.mvvm.mindorks.utils
 
-import android.util.Log
-
 data class State<out T>(val status: Status?, val throwable: Throwable?, val data: T?) {
 
     companion object {
@@ -11,7 +9,6 @@ data class State<out T>(val status: Status?, val throwable: Throwable?, val data
         }
 
         fun <T> error(throwable: Throwable?, data: T? = null): State<T> {
-            Log.e("ThrowableResource", throwable?.message.toString())
             return State(Status.ERROR, throwable, data)
         }
 

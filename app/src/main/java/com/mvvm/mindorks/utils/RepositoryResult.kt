@@ -15,10 +15,6 @@ data class RepositoryResult<out T>(val status: Status?, val throwable: Throwable
             return RepositoryResult(Status.ERROR, throwable, data)
         }
 
-        fun <T> loading(data: T? = null): RepositoryResult<T> {
-            return RepositoryResult(Status.LOADING, null, data)
-        }
-
     }
 
 }
